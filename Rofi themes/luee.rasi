@@ -1,0 +1,89 @@
+*{
+	enable: true;
+}
+/*-------main-window------*/
+window{
+	//window widget properties
+	anchor: west;
+	location: west;
+	x-offset: 10px;
+	y-offset: -314px;
+	width: 30%;
+	height: 40%;
+	//all widget properties
+	background-color: #00324D;
+	border-radius: 8px 8px 8px 8px;
+	padding: 0px;
+	cursor: pointer;
+	orientation: vertical;
+}
+/*-----main-box-----*/
+mainbox{
+	border-radius: 8px;
+	background-color: transparent;
+	transparency: "real";
+	children: [inputbar, horibox];
+	orientation: vertical;
+	spacing: 10px;
+}
+/*------iputbar----*/
+inputbar{
+	background-color: #FEEECA;
+	transparency: "real";
+	padding: 5px;
+	border: 0px 0px 0px 0px;
+	border-radius: 5px 5px 0px 0px;
+	orientation: horizontal;
+	children: [prompt, entry];
+}
+
+horibox{
+	background-color: transparent;
+	transparency: "real";
+	orientation: horizontal;
+	padding: 5px;
+	border-radius: 8px;
+	children: [imgbox, listview];
+}
+imgbox{
+    background-color: transparent;
+    transparency: "real";
+    border: 0px 5px 200px 5px;
+	background-image: url("/home/luee/Pictures/Rofi.png", both);
+}
+
+/*------listview-----*/
+listview{
+    border: 8px;
+    border-radius: 8px;
+	background-color: #00324D;
+	border-color: #72A1A9;
+	padding: 5px 5px 0px 5px;
+	spacing: 10px;
+	cursor: default;
+}
+/*------element-----*/
+element{
+	background-color: transparent;
+	transparency: "real";
+	border-color: #C42529;
+	border-radius: 5px;
+	border: 5px;
+}
+element-text{
+	background-color: transparent;
+	background-color: #FEEECA;
+	transparency: "real";
+	padding: 5px;
+}
+
+prompt{
+	background-color: #FEEECA;
+	border-radius: 5px 0px 0px 5px;
+	transparency: "real";
+	padding: 0px 5px 0px 5px;
+}
+entry{
+	background-color: transparent;
+	transparency: "real";
+}
